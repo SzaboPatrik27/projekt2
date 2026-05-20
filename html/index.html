@@ -3,43 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romano Gold - Történetünk</title>
+    <title>Romano Gold - Kezdőlap</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
     <nav class="navbar">
+        <div class="nav-brand">Romano Gold</div>
         <ul class="nav-links">
-            <li><a href="../html/index.html">Kezdőlap</a></li>
-            <li><a href="../html/termekek.html">Termékek</a></li>
-            <li><a href="../html/tortenetunk.html" class="active">Történetünk</a></li>
+            <li><a href="index.html" class="active">Kezdőlap</a></li>
+            <li><a href="termekek.html">Termékek</a></li>
+            <li><a href="tortenetunk.html">Történetünk</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <header class="header">
+    <main class="container">
+        <section class="hero-section">
             <div class="logo-placeholder">
-                <img src="../kepek/logo.png" alt="Romano Gold Logo">
+                <img src="../kepek/logo.png" alt="Romano Gold logó">
             </div>
-        </header>
+            <h1>ROMANO GOLD</h1>
+            <div class="gold-divider"></div>
+            <p class="hero-text">
+                Prémium aranyékszerek különleges alkalmakra. Nézd meg termékeinket,
+                válaszd ki a kedvencedet, és tedd a kosárba egy kattintással.
+            </p>
+            <a class="btn" href="termekek.html">Termékek megtekintése</a>
+        </section>
 
-        <main class="content-wrapper">
-            <section class="story-box">
-                <h1>Történetünk</h1>
-                <div class="gold-divider"></div>
-                <p>
-                    A <strong>Romano Gold</strong> története a tradicionális értékek és a modern online marketing találkozása. 
-                    A márka tudatosan épít a <strong>roma kulturális örökségre</strong>, olyan látványos, súlyos és klasszikus 
-                    aranyékszereket kínálva, amelyek a hagyományos közösségekben a gazdagságot és a sikert szimbolizálják.
-                </p>
-                <p>
-                    Ismertségüket a provokatív, de őszinte <strong>"Nem lopott aranyak"</strong> szlogennek és az erős 
-                    közösségi médiás jelenlétüknek köszönhetik, amivel sikeresen döntögetik a sztereotípiákat, 
-                    miközben fémjelzett, legális forrásból származó luxustermékeket értékesítenek.
-                </p>
-            </section>
-        </main>
-    </div>
-
+        <section class="info-cards">
+            <article class="info-card">
+                <h2>Minőségi ékszerek</h2>
+                <p>Elegáns gyűrűk, nyakláncok és díszes darabok látványos megjelenéssel.</p>
+            </article>
+            <article class="info-card">
+                <h2>Gyors szállítás</h2>
+                <p>Rendelésedet gyorsan és biztonságosan szállítjuk házhoz.</p>
+        </section>
+    </main>
+    <script src="../js/js.js"></script>
 </body>
 </html>

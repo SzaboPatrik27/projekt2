@@ -3,70 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romano Gold - Termékeink</title>
+    <title>Romano Gold - Termékek</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
     <nav class="navbar">
+        <div class="nav-brand">Romano Gold</div>
         <ul class="nav-links">
-            <li><a href="../html/index.html">Kezdőlap</a></li>
-            <li><a href="../html/termekek.html" class="active">Termékek</a></li>
-            <li><a href="../html/tortenetunk.html">Történetünk</a></li>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="termekek.html" class="active">Termékek</a></li>
+            <li><a href="tortenetunk.html">Történetünk</a></li>
         </ul>
+        <button class="cart-open-btn" id="cartOpenBtn">Kosár <span id="cartCount">0</span></button>
     </nav>
 
-    <div class="container">
-        <header class="header">
+    <main class="container">
+        <header class="page-header">
             <div class="logo-placeholder">
-                <img src="../kepek/logo.png" alt="Romano Gold Logo">
+                <img src="../kepek/logo.png" alt="Romano Gold logó">
             </div>
+            <h1>Termékeink</h1>
+            <p>Válassz ékszert, majd nyomd meg a „Kosárba” gombot.</p>
         </header>
 
-        <main class="product-grid">
-            <div class="product-item">
-                <div class="image-box">
-                    <img src="../kepek/termek1.png" alt="Ékszer">
-                </div>
-                <p class="label">Gyémánt gyűrű</p>
-            </div>
+        <section class="product-grid" id="productGrid">
+            <article class="product-item" data-id="1" data-name="Gyémánt gyűrű" data-price="24990" data-image="../kepek/termek1.png">
+                <div class="image-box"><img src="../kepek/termek1.png" alt="Gyémánt gyűrű"></div>
+                <h2 class="label">Gyémánt gyűrű</h2>
+                <p class="price">24 990 Ft</p>
+                <button class="add-to-cart">Kosárba</button>
+            </article>
 
-            <div class="product-item">
-                <div class="image-box">
-                    <img src="../kepek/termek2.png" alt="Ékszer">
-                </div>
-                <p class="label">El lett cigánykodva</p>
-            </div>
+            <article class="product-item" data-id="2" data-name="Arany karkötő" data-price="31990" data-image="../kepek/termek2.png">
+                <div class="image-box"><img src="../kepek/termek2.png" alt="Arany karkötő"></div>
+                <h2 class="label">Arany karkötő</h2>
+                <p class="price">31 990 Ft</p>
+                <button class="add-to-cart">Kosárba</button>
+            </article>
 
-            <div class="product-item">
-                <div class="image-box">
-                    <img src="../kepek/termek3.png" alt="Ékszer">
-                </div>
-                <p class="label">drágaköves bigyó</p>
-            </div>
+            <article class="product-item" data-id="3" data-name="Drágaköves medál" data-price="18990" data-image="../kepek/termek3.png">
+                <div class="image-box"><img src="../kepek/termek3.png" alt="Drágaköves medál"></div>
+                <h2 class="label">Drágaköves medál</h2>
+                <p class="price">18 990 Ft</p>
+                <button class="add-to-cart">Kosárba</button>
+            </article>
 
-            <div class="product-item">
-                <div class="image-box">
-                    <img src="../kepek/termek4.png" alt="Ékszer">
-                </div>
-                <p class="label">szív alaku lapis lofasz</p>
-            </div>
+            <article class="product-item" data-id="4" data-name="Szív alakú medál" data-price="15990" data-image="../kepek/termek4.png">
+                <div class="image-box"><img src="../kepek/termek4.png" alt="Szív alakú medál"></div>
+                <h2 class="label">Szív alakú medál</h2>
+                <p class="price">15 990 Ft</p>
+                <button class="add-to-cart">Kosárba</button>
+            </article>
 
-            <div class="product-item">
-                <div class="image-box">
-                    <img src="../kepek/termek5.png" alt="Ékszer">
-                </div>
-                <p class="label">Gyémánt nyaklánc</p>
-            </div>
+            <article class="product-item" data-id="5" data-name="Gyémánt nyaklánc" data-price="42990" data-image="../kepek/termek5.png">
+                <div class="image-box"><img src="../kepek/termek5.png" alt="Gyémánt nyaklánc"></div>
+                <h2 class="label">Gyémánt nyaklánc</h2>
+                <p class="price">42 990 Ft</p>
+                <button class="add-to-cart">Kosárba</button>
+            </article>
 
-            <div class="product-item">
-                <div class="image-box">
-                    <img src="../kepek/termek6.png" alt="Ékszer">
-                </div>
-                <p class="label">24K arany gyémántokkal díszitett páros gyűrű</p>
-            </div>
-        </main>
-    </div>
+            <article class="product-item" data-id="6" data-name="24K páros gyűrű" data-price="59990" data-image="../kepek/termek6.png">
+                <div class="image-box"><img src="../kepek/termek6.png" alt="24K páros gyűrű"></div>
+                <h2 class="label">24K páros gyűrű</h2>
+                <p class="price">59 990 Ft</p>
+                <button class="add-to-cart">Kosárba</button>
+            </article>
+        </section>
+    </main>
 
+    <aside class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h2>Kosár</h2>
+            <button id="cartCloseBtn">×</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+            <p>Végösszeg: <strong id="cartTotal">0 Ft</strong></p>
+            <button id="clearCartBtn" class="secondary-btn">Kosár ürítése</button>
+            <button id="orderBtn" class="btn full-width">Megrendelés</button>
+        </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="toast" id="toast">Termék hozzáadva a kosárhoz!</div>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
