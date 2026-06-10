@@ -436,3 +436,33 @@ body {
     background: rgba(0,0,0,0.5);
     z-index: 999;
 }
+.member-grid{
+    background-color: white;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+.member1{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.member2{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.member3{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
